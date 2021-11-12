@@ -20,6 +20,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         let rome = Capital(title: "Rome", coordinate: CLLocationCoordinate2D(latitude: 41.9, longitude: 12.5), info: "Pasta, Pizza!")
         
         mapView.addAnnotations([london, oslo, paris, rome])
+        mapView.mapType = .satellite // or hybrid, standart etc
         
     }
     
